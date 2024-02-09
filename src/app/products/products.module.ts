@@ -9,12 +9,17 @@ import { UncommonPageComponent } from './pages/uncommon-page/uncommon-page.compo
 import { ProductsRoutingModule } from './products-routing.module';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
+import { ToggleCasePipe } from './pipes/toggle.case.pipe';
+
 @NgModule({
   declarations: [
     BasicsPageComponent,
     NumbersPageComponent,
     OrderComponent,
     UncommonPageComponent,
+
+    //Pipes
+    ToggleCasePipe,
   ],
   imports: [CommonModule, PrimeNgModule, ProductsRoutingModule],
 })
