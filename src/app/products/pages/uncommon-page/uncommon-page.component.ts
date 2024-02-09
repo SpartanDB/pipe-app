@@ -18,4 +18,16 @@ export class UncommonPageComponent {
     this.name = 'Melissa';
     this.gender = 'female';
   }
+
+  // i18n Plural Pipe
+  public clients: string[] = ['Daniel', 'Melissa', 'Juan', 'Pedro', 'Ana'];
+  public clientsMap: { [key: string]: string } = {
+    '=0': 'no hay clientes esperando',
+    '=1': 'hay un cliente esperando',
+    other: 'hay # clientes esperando',
+  };
+
+  deleteClients(): void {
+    this.clients.shift();
+  }
 }
