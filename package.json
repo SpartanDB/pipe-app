@@ -10,7 +10,7 @@
     "build:herf": "ng build --base-href ./",
     "build:github": "npm run delete:docs && npm run build:herf && npm run copy:dist",
     "delete:docs": "del docs",
-    "copy:dist": "copyfiles dist/country-app/* ./docs -f"
+    "copy:dist": "copyfiles dist/pipes-app/* ./docs -f"
   },
   "private": true,
   "dependencies": {
