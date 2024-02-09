@@ -22,17 +22,30 @@
 
   <div class="col-12 md:col-6">
     <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
-        <p>
-          Actualmente {{ clients.length | i18nPlural:clientsMap }}
-        </p>
+      <p>
+        Actualmente {{ clients.length | i18nPlural:clientsMap }}
+      </p>
 
-        <p-button (click)="deleteClients()" label="Cliente atendido"></p-button>
+      <p-button (click)="deleteClients()" label="Cliente atendido"></p-button>
     </p-fieldset>
   </div>
 
   <div class="col-12 md:col-6">
     <p-fieldset legend="Slice Pipe" [toggleable]="true">
+      <b>Original</b>
+      <pre>{{ clients }}</pre>
 
+      <b>Primeros 3</b>
+      <pre>{{ clients | slice:0:3 }}</pre>
+
+      <b>Ultimos 3</b>
+      <pre>{{ clients | slice:-3 }}</pre>
+
+      <b>Desde el 3 al 5</b>
+      <pre>{{ clients | slice:2:5 }}</pre>
+
+      <b>Desde el 3 al 5 (negativo)</b>
+      <pre>{{ clients | slice:-5:-2 }}</pre>
     </p-fieldset>
   </div>
 
