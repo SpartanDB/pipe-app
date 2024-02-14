@@ -24,7 +24,7 @@
 <!-- <div class="grid"> -->
   <!-- <div class="col mt-2"> -->
     <p-panel header="Heroes" class="p-2">
-      <p-table [value]="heroes" styleClass="p-datatable-striped" [tableStyle]="{ 'min-width': '30rem' }">
+      <p-table [value]="heroes | sortBy:'canFly'" styleClass="p-datatable-striped" [tableStyle]="{ 'min-width': '30rem' }">
         <ng-template pTemplate="header">
           <tr>
             <th>Nombre</th>
