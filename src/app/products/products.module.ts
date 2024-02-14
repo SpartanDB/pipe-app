@@ -9,7 +9,8 @@ import { UncommonPageComponent } from './pages/uncommon-page/uncommon-page.compo
 import { ProductsRoutingModule } from './products-routing.module';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
-import { ToggleCasePipe } from './pipes/toggle.case.pipe';
+import { CanFlyPipe } from './pipes/can-fly.pipe';
+import { ToggleCasePipe } from './pipes/toggle-case.pipe';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ToggleCasePipe } from './pipes/toggle.case.pipe';
     UncommonPageComponent,
 
     //Pipes
+    CanFlyPipe,
     ToggleCasePipe,
   ],
   imports: [CommonModule, PrimeNgModule, ProductsRoutingModule],
